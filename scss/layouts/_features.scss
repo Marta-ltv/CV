@@ -1,0 +1,92 @@
+/*Секція Features*/
+
+.feature__list {
+  @include mq(tablet-only) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+
+    @include mq(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+}
+
+.feature__item {
+  list-style: none;
+
+
+  @include mq(mobile-only) {
+      width: 100%;
+  
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+  @include mq(tablet-only) {
+    width: 354px;
+    flex-basis: calc((100% - 1 * 30px) / 2);
+   
+    &:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+   
+}
+
+  @include mq(desktop) {
+    width: 270px;
+    flex-basis: calc((100% - 3 * 30px) / 4);
+    margin-right: 30px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.feature-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-bg-color);
+  background-position: center;
+  height: 120px;
+
+  margin-bottom: 30px;
+}
+
+.feature__title {
+  @include mq(mobile-only) {
+    display: flex;
+    justify-content: center;
+  }
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  color: var(--main-txt-cl);
+}
+
+.feature__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-transform: none;
+
+  color: var(--secondary-txt-cl);
+}
