@@ -86,6 +86,10 @@ letter-spacing: 0.15rem;
 text-transform: uppercase;
 }
 
+.home__profession {
+text-align: center;
+}
+
 .section {
     padding: 1.5rem 0;
 }
