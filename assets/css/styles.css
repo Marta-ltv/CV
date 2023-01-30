@@ -2,12 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600&family=Titan+One&display=swap');
 
-/* ===== VARIABLES ===== */
 
 :root {
     --header-hight: 3rem;
-
-    /* COLORS */
 
     --title-color: #0b0a0a;
     --text-color: #403a3a;
@@ -15,8 +12,6 @@
     --container-color: #fafafa;
     --container-color-alt: #f0efef;
     --body-color: #fcfcfc;
-
-    /* FONTS */
 
     --body-font: 'Poppins', sans-serif;
     --h1-font-size: 1.5rem;
@@ -26,21 +21,19 @@
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
 
-    /* FONT WEIGHT */
+
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /* MARGENES */
     --mb-1: 0.5rem;
     --mb-2: 1rem;
     --mb-3: 1.5rem;
 
-    /* Z INDEX */
-    --z-tooltip: 10;
-    --z-fixed: 100;
+ 
+    /* --z-tooltip: 10;
+    --z-fixed: 100; */
 }
 
-/* BASE */
 *,
 ::before,
 ::after {
@@ -51,7 +44,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Font size variables to scale cv */
 
 body.scale-cv {
     --h1-font-size: 0.938rem;
@@ -62,23 +54,11 @@ body.scale-cv {
     --smaller-font-size: 0.688rem;
 }
 
-/* Generate PDF button */
-
-.generate-pdf {
-    display: none;
-    position: absolute;
-    top: 2.2rem;
-    left: 0;
-    font-size: 1.2rem;
-    color: var(--text-color);
-    cursor: pointer;
-}
 
 .generate-pdf:hover {
     color: var(--title-color);
 }
 
-/* CLASSES MODIFIED TO REDUSE SIZE AND PRINT ON A4 SHEET */
 
 .scale-cv .change-theme,
 .scale-cv .generate-pdf {
@@ -90,9 +70,6 @@ body.scale-cv {
 
 }
 
-/* .scale-cv .bd-container {
-  max-width: 595px;
-} */
 
 .scale-cv .section {
     padding: 1rem 0 0rem;
@@ -165,19 +142,6 @@ body.scale-cv {
     margin-right: 0.25rem;
 }
 
-/* .scale-cv .projects__item:not(:last-child) {
-  margin-bottom: var(--mb-1);
-} */
-
-/* .scale-cv .skills__name {
-  margin-bottom: var(--mb-1);
-} */
-
-/* .scale-cv .interests__container {
-  column-gap: 2.5rem;
-}
-/*  */
-
 body {
     margin: 0 0 3rem 0;
     padding: 0;
@@ -223,7 +187,7 @@ font-size: var(--h1-font-size);
 font-weight: bold;
 text-align: center;
 padding: 15px;
-letter-spacing: 0.35rem;
+letter-spacing: 0.15rem;
 text-transform: uppercase;
 }
 
@@ -236,16 +200,10 @@ text-transform: uppercase;
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
     text-transform: uppercase;
-    letter-spacing: 0.35rem;
+    letter-spacing: 0.15rem;
     text-align: center;
     margin-bottom: var(--mb-3);
 }
-
-/* .section-subtitle {
-  margin-bottom: var(--mb-1);
-} */
-
-/* LAYOUT */
 
 .bd-container {
     max-width: 968px;
@@ -270,7 +228,6 @@ text-transform: uppercase;
     transition: 3s ease-out;
 }
 
-/* NAV */
 .nav {
     height: 3rem;
     display: flex;
@@ -278,7 +235,6 @@ text-transform: uppercase;
     align-items: center;
 }
 
-/* Paragraph circle */
 
 .circle {
     display: inline-block;
@@ -348,13 +304,9 @@ text-transform: uppercase;
     bottom: 3rem;
 }
 
-/* Active menu link */
-
 .active-link {
     color: var(--title-color);
 }
-
-/* ===== HOME ===== */
 
 .home {
     position: relative;
@@ -409,7 +361,7 @@ text-transform: uppercase;
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--text-color);
-    /* transition: font-size 0.5s ease; */
+
 }
 
 .contacts__link:hover {
@@ -421,20 +373,14 @@ text-transform: uppercase;
     margin-right: 0.25rem;
 }
 
-/*===== SKILLS AND LANGUAGES =====*/
-
 /*===== PROJECTS =====*/
 
 .projects__title {
     color: var(--title-color);
     font-size: var(--h3-font-size);
     cursor: pointer;
-    /* margin-bottom: var(--mb-3); */
 }
 
-/* .projects__item:not(:last-child) {
-  margin-bottom: var(--mb-3);
-} */
 
 .projects__icon {
     font-size: 1.2rem;
@@ -472,45 +418,17 @@ text-transform: uppercase;
 }
 
 
-/* Scrolltop */
 
-.scrolltop {
-    position: fixed;
-    right: 1rem;
-    bottom: -20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.3rem;
-    background-color: var(--container-color-alt);
-    border-radius: 0.4rem;
-    z-index: var(--z-tooltip);
-    transition: 0.4s;
-    visibility: hidden;
-}
 
-.scrolltop {
-    font-size: 1.2rem;
-    color: var(--text-color);
-}
-
-.show-scroll {
-    visibility: visible;
-    bottom: 5rem;
-}
-
-/* MEDIA QUERIES */
 
 @media screen and (max-width: 320px) {
 
-    /* For small devices menu two columns */
     .nav__list {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem 0.5rem;
     }
 }
 
-/* Classes modified for large screen menu */
 
 @media screen and (min-width: 968px) {
     body {
@@ -547,9 +465,6 @@ text-transform: uppercase;
         display: inline-block;
     }
 
-    /* .section-title {
-    text-align: initial;
-  } */
 
     .home__container {
         gap: 1.5rem;
@@ -570,29 +485,3 @@ text-transform: uppercase;
     }
 }
 
-/* Variables Dark Theme */
-
-body.dark-theme {
-    --title-color: #f2f2f2;
-    --text-color: #bfbfbf;
-    --container-color: #212121;
-    --container-color-alt: #181616;
-    --body-color: #2b2b2b;
-}
-
-/* Button Dark / Light */
-
-.change-theme {
-    position: absolute;
-    right: 0;
-    top: 2.2rem;
-    display: flex;
-    color: var(--text-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-
-}
-
-.change-theme:hover {
-    color: var(--title-color);
-}
