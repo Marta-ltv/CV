@@ -81,6 +81,8 @@
 
     <main class="bd-container">
 
+      <!-- All elements within this div are generated in PDF  -->
+
       <div class="resume" id="area-cv">
 
         <!------- RESUME LEFT ------->
@@ -93,6 +95,23 @@
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
                 <img src="assets/image/103766196.jfif" alt="photo" class="home__img">
+
+
+                <!-- Button to download your CV saved in the PDF folder. Avaliable for mobile. -->
+
+                <div>
+                  <a href="assets/pdf/marta_litvinchuk.pdf"    class="home__button-movil">Download</a>
+                </div>
+              </div>
+
+            <!-- Theme change button -->
+
+            <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+            <!-- Button to generate and download the PDF. Avaliable for desktop   -->
+
+            <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button" ></i> 
+
           </section>
 
           <!------- CONTACTS ------->
@@ -228,7 +247,7 @@
 
           <!------- SUMMARY ------->
 
-        <h1 class="main_title">MARTA <b>LITVINCHUK</b></h1>
+          <h1 class="main_title">MARTA <b>LITVINCHUK</b></h1>
         <h3 class="home__profession">Full-Stack developer</h3>
 
           <section class="summary section" id="summary">
@@ -287,7 +306,6 @@ easier, more productive and user-friendly. I focus on HTML5, CSS3, JS, React. I 
               </div>
             </div>
           </section>
-
 
           <!-- EXPERIENCE -->
 
@@ -355,6 +373,18 @@ easier, more productive and user-friendly. I focus on HTML5, CSS3, JS, React. I 
         </div>
       </div>      
     </main>
-    
+
+    <!-- SCROLL TOP -->
+
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+    </a>
+
+    <!-- HTML2PDF -->
+
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js" ></script>
   </body>
 </html>
