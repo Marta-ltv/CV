@@ -90,9 +90,6 @@ body.scale-cv {
 
 }
 
-/* .scale-cv .bd-container {
-  max-width: 595px;
-} */
 
 .scale-cv .section {
     padding: 1rem 0 0rem;
@@ -165,19 +162,6 @@ body.scale-cv {
     margin-right: 0.25rem;
 }
 
-/* .scale-cv .projects__item:not(:last-child) {
-  margin-bottom: var(--mb-1);
-} */
-
-/* .scale-cv .skills__name {
-  margin-bottom: var(--mb-1);
-} */
-
-/* .scale-cv .interests__container {
-  column-gap: 2.5rem;
-}
-/*  */
-
 body {
     margin: 0 0 3rem 0;
     padding: 0;
@@ -232,9 +216,12 @@ img {
     margin-bottom: var(--mb-3);
 }
 
-/* .section-subtitle {
-  margin-bottom: var(--mb-1);
-} */
+.main_title, .home__profession {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* LAYOUT */
 
@@ -423,10 +410,6 @@ img {
     /* margin-bottom: var(--mb-3); */
 }
 
-/* .projects__item:not(:last-child) {
-  margin-bottom: var(--mb-3);
-} */
-
 .projects__icon {
     font-size: 1.2rem;
     margin-right: 0.25rem;
@@ -538,9 +521,6 @@ img {
         display: inline-block;
     }
 
-    /* .section-title {
-    text-align: initial;
-  } */
 
     .home__container {
         gap: 1.5rem;
