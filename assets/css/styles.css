@@ -407,7 +407,7 @@ img {
     color: var(--title-color);
     font-size: var(--h3-font-size);
     cursor: pointer;
-    /* margin-bottom: var(--mb-3); */
+    text-decoration: underline;
 }
 
 .projects__icon {
